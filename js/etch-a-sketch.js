@@ -12,5 +12,11 @@ function drawGrid(size, container) {
 function createTile() {
     const newTile = document.createElement('div');
     newTile.classList.add('tile');
+    newTile.addEventListener('mouseenter', e => {fillTile(e.target)});
+    
     return newTile;
+}
+
+function fillTile(tile) {
+    tile.style.background = 'black';
 }
