@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.tile {
+    border: .5px solid rgba(0,0,0,0.1);
+}
