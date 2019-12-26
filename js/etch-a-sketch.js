@@ -31,7 +31,40 @@ function createTile() {
 }
 
 function fillTile(tile) {
-    tile.style.background = randomColor();
+    switch (tile.style.background) {
+        case `rgba(0, 0, 0, 0.1)`:
+            tile.style.background = `rgba(0, 0, 0, 0.2)`;
+            break;
+        case `rgba(0, 0, 0, 0.2)`:
+            tile.style.background = `rgba(0, 0, 0, 0.3)`;
+            break;
+        case `rgba(0, 0, 0, 0.3)`:
+            tile.style.background = `rgba(0, 0, 0, 0.4)`;
+            break;
+        case `rgba(0, 0, 0, 0.4)`:
+            tile.style.background = `rgba(0, 0, 0, 0.5)`;
+            break;
+        case `rgba(0, 0, 0, 0.5)`:
+            tile.style.background = `rgba(0, 0, 0, 0.6)`;
+            break;
+        case `rgba(0, 0, 0, 0.6)`:
+            tile.style.background = `rgba(0, 0, 0, 0.7)`;
+            break;
+        case `rgba(0, 0, 0, 0.7)`:
+            tile.style.background = `rgba(0, 0, 0, 0.8)`;
+            break;
+        case `rgba(0, 0, 0, 0.8)`:
+            tile.style.background = `rgba(0, 0, 0, 0.9)`;
+            break;
+        case `rgba(0, 0, 0, 0.9)`:
+            tile.style.background = `rgba(0, 0, 0, 1)`;
+            break;
+        case `rgb(0, 0, 0)`:
+            break;
+        default:
+            tile.style.background = `rgba(0, 0, 0, 0.1)`;
+            break;
+    }
 }
 
 function randomColor() {
