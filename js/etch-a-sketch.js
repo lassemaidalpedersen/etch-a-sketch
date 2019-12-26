@@ -1,6 +1,19 @@
 const container = document.querySelector('#container');
+const newDrawboard = document.querySelector('#newDrawboard');
 
-drawGrid(20, container);
+newDrawboard.addEventListener('click', () => {createDrawboard()});
+
+drawGrid(16, container);
+
+function createDrawboard() {
+    const size = prompt(`Size:`);
+
+    while (container.children.length > 0) {
+        container.removeChild(container.lastChild);
+    }
+
+    drawGrid(size, container);
+};
 
 function drawGrid(size, container) {
     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
